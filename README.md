@@ -1,5 +1,8 @@
 # catalog_shamir
 
+
+use node shamir.js to run 
+
 <img width="882" alt="Screenshot 2024-09-30 at 11 46 31 AM" src="https://github.com/user-attachments/assets/26abe34f-640f-4cd6-8b39-d9dbfe314c9c">
 
 

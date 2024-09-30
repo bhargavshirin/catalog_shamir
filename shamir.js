@@ -1,4 +1,6 @@
 
+//bhargav shirin nalamati
+//file structure
 const fs = require('fs');
 
 const testCases = JSON.parse(fs.readFileSync('./input.json', 'utf8'));
@@ -44,13 +46,13 @@ function lagrangeInter(shares, k) {
     let li = 1;
 
     for (let j = 0; j < k; j++) {
-      if (i !== j) {
-        let { x: xj } = shares[j];
-        li = li * xj / (xj - xi);
+      if (i !== j) {    //different 1,2 2,3 1,3 
+        let { x: xj } = shares[j];  
+        li = li * xj / (xj - xi);   //f(x)
       }
     }
 
-    secret += yi * li;
+    secret = secret +  yi * li;
   }
 
   return Math.round(secret);
